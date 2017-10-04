@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Researches</title>
+    <!-- Bootstrap -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+    <link href="css/blog.css" rel='stylesheet' type='text/css' />
+    <script type="application/x-javascript">
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+     <script src="https://oss.maxcdn.com/libs/respond.web/js/1.4.2/respond.min.js"></script>
+<![endif]-->
+    <link href=' http://fonts.useso.com/css?family=Kreon:300,400,700 ' rel='stylesheet ' type='text/css '>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- start plugins -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script>
+        $(function() {
+            var pull = $('#pull ');
+            menu = $('nav ul ');
+            menuHeight = menu.height();
+            $(pull).on('click ', function(e) {
+                e.preventDefault();
+                menu.slideToggle();
+            });
+            $(window).resize(function() {
+                var w = $(window).width();
+                if (w > 320 && menu.is(':hidden ')) {
+                    menu.removeAttr('style ');
+                }
+            });
+        });
+    </script>
+    <!----font-Awesome----->
+    <link rel="stylesheet" href="fonts/web/css/font-awesome.min.css">
+    <!----font-Awesome----->
+</head>
+
+<body>
+    <div class="header_bg" id="home">
+        <!-- start header -->
+        <div class="container">
+            <div class="row header text-center specials">
+                <div class="h_logo">
+                    <a href="index.html"><img src="images/logo.png" alt="" class="responsive" /></a>
+                </div>
+                <nav class="top-nav">
+                    <ul class="top-nav nav_list">
+                        <!-- <li><a href="portfolio.html">portfolio</a></li> -->
+                        <li class="page-scroll"><a href="http://dmtalen.lofter.com/">LOFTER</a></li>
+                        <li class="page-scroll"><a href="https://github.com/dreamtalen">Github</a></li>
+                        <li class="logo page-scroll">
+                            <a title="hexa" href="index.html"><img src="images/logo.png" alt="" class="responsive" /></a>
+                        </li>
+                        <li class="page-scroll"><a href="research.html">research</a></li>
+                        <li class="page-scroll"><a href="#about">About</a></li>
+
+                        <!-- <li class="page-scroll"><a href="#contact">get in touch</a></li> -->
+                    </ul>
+                    <a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+                </nav>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="blog-header">
+            <h1 class="blog-title">Researches</h1>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-12 blog-main">
+                <div class="blog-post">
+                    <h2 class="blog-post-title">Publication</h2>
+                    <ul>
+                        <li><strong>Yongming Ding</strong>, Wei Jin, Guanghui He, Weifeng He. "Short Path Padding with Multiple-Vt cells for Wide-Pulsed-Latch Based Circuits at Ultra-Low Voltage." <em>IEEE International Conference on ASIC (2017).</em> Accepted.</li>
+                        <li>This paper can be downloaded <a href="https://github.com/dreamtalen/Short_Path_Padding/raw/master/Short%20Path%20Padding%20with%20Multiple-Vt%20cells%20for%20Wide-Pulsed-Latch%20Based%20Circuits%20at%20Ultra-Low%20Voltage.pdf">here</a>.</li>
+                    </ul>
+                </div>
+                <div class="blog-post">
+                    <h2 class="blog-post-title">Short Path Padding Technique Design</h2>
+                    <p class="blog-post-meta">Supervised by Prof. Weifeng He, Shanghai Jiao Tong University</p>
+                    <ul>
+                        <!-- <li>Used a directed acyclic graph to represent the circuit and built a math model for the short path padding problem.</li> -->
+                        <li>Designed and implemented a short path padding software system employing integer linear programming method, which supports up to a wide pulse of 1/3 cycle time in pulsed-latch pipelines.</li>
+                        <li>Proposed step-by-step based, path group based and hybrid schemes to reduce up to 80.9% runtime of the baseline padding software.</li>
+                        <li>Used multiple-Vt buffer cells to reduce additional hardware cost by 52.3%, on average.</li>
+                        <li>Code repository can be founded <a href="https://github.com/dreamtalen/Short_Path_Padding">here at Github.com</a>.</li>
+                    </ul>
+                    <img class="img-responsive center-block" src="images/short_path_padding_table1.png" width=70% />
+                    <br>
+                    <img class="img-responsive center-block" src="images/short_path_padding_table2.png" width=70% />
+                    <br>
+                    <img class="img-responsive center-block" src="images/path_group.png" width=70% />
+                    <p class="text-center">Fig. 1. Path group based circuit partitioning and short path padding scheme</p>
+                    <br>
+                    <img class="img-responsive center-block" src="images/short_path_padding_table3.png" width=100% />
+                </div>
+                <div class="blog-post">
+                    <h2 class="blog-post-title">Three-dimensional Integrated Circuit(3D-IC) Partitioning Technique Design</h2>
+                    <p class="blog-post-meta">Supervised by Prof. Weifeng He, Shanghai Jiao Tong University</p>
+                    <ul>
+                        <li><strong>Excellent graduate thesis</strong> in Department of Micro-Nano Electronics, Shanghai Jiao Tong University.</li>
+                        <li>Designed a 3D-IC partitioning algorithm for motion estimation(ME) module of HEVC, including the initial partition algorithm based on breath first search and the iterative optimization algorithm.</li>
+                        <li>Designed and implemented a partitioning algorithm evaluation platform which that has functions including a netlist file parser, analyzing area reports, modeling circuits with hyper-graph data structures, applying partitioning algorithms,
+                            and evaluating partition results by the area utilization rate and cut edges number.</li>
+                        <li>Achieved an optimum partition for the ME module, which reduced 42.9% of the cut edges while the area utilization rate reached 95.5%.</li>
+                        <li>Code repository can be founded <a href="https://github.com/dreamtalen/3D-IC_Partitioning">here at Github.com</a>.</li>
+                        <li>This paper can be downloaded <a href="https://github.com/dreamtalen/3D-IC_Partitioning/raw/master/3D%20IC%20PARTITIONING%20TECHNIQUE%20BASED%20ON%20HEVC.pdf">here</a> (Chinese version).</li>
+                    </ul>
+                    <img class="img-responsive center-block" src="images/ic_partition_table1.png" width=70% />
+                    <br>
+                    <img class="img-responsive center-block" src="images/ic_partition_table2.png" width=80% />
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main_bg" id="about">
+        <!-- start about us -->
+        <div class="container">
+            <div class="row about">
+                <div class="col-md-3 about_img">
+                    <img src="images/user.jpg" alt="" class="responsive" />
+                </div>
+                <div class="col-md-9 about_text">
+                    <h3>Yongming Ding</h3>
+                    <h4>Electronic Science and Technology, Shanghai Jiao Tong University</h4>
+                    <h4>Here is my <a href="https://github.com/dreamtalen/CV_Ding/raw/master/CV_latest.pdf">CV</a>.</h4>
+                    <p>Computer Aided Design / Electronics Design Automation
+                        <br> Python Web Fullstack (Django, Bootstrap)
+                        <br> Python Machine Learning & Data Analysis (Tensorflow, Numpy)
+                        <br> Humanities Photography/Landscape Photography/Freestyle Swimming/Hi-Fi Headphone
+                    </p>
+                    <!-- <p>Here is my <a href="https://github.com/dreamtalen/CV_Ding/raw/master/CV_latest.pdf">CV</a>.</p> -->
+                    <!-- 			<div class="soc_icons navbar-right">
+				<ul class="list-unstyled text-center">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+					<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+				</ul>	
+			</div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
