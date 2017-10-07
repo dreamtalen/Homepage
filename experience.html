@@ -2,11 +2,13 @@
 <html>
 
 <head>
-    <title>Homepage</title>
+    <title>Experience</title>
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
-    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+    <link href="css/blog.css" rel='stylesheet' type='text/css' />
     <script type="application/x-javascript">
         addEventListener("load", function() {
             setTimeout(hideURLbar, 0);
@@ -20,27 +22,30 @@
      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
      <script src="https://oss.maxcdn.com/libs/respond.web/js/1.4.2/respond.min.js"></script>
 <![endif]-->
-    <!--<link href='http://fonts.useso.com/css?family=Kreon:300,400,700' rel='stylesheet' type='text/css'>-->
+    <!--<link href=' http://fonts.useso.com/css?family=Kreon:300,400,700 ' rel='stylesheet ' type='text/css '>-->
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
     <!-- start plugins -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script>
         $(function() {
-            var pull = $('#pull');
-            menu = $('nav ul');
+            var pull = $('#pull ');
+            menu = $('nav ul ');
             menuHeight = menu.height();
-            $(pull).on('click', function(e) {
+            $(pull).on('click ', function(e) {
                 e.preventDefault();
                 menu.slideToggle();
             });
             $(window).resize(function() {
                 var w = $(window).width();
-                if (w > 320 && menu.is(':hidden')) {
-                    menu.removeAttr('style');
+                if (w > 320 && menu.is(':hidden ')) {
+                    menu.removeAttr('style ');
                 }
             });
         });
     </script>
+    <!----font-Awesome----->
+    <!--<link rel="stylesheet" href="fonts/web/css/font-awesome.min.css">-->
+    <!----font-Awesome----->
     <script>
         var _hmt = _hmt || [];
         (function() {
@@ -50,9 +55,6 @@
             s.parentNode.insertBefore(hm, s);
         })();
     </script>
-    <!----font-Awesome----->
-    <!--<link rel="stylesheet" href="fonts/web/css/font-awesome.min.css">-->
-    <!----font-Awesome----->
 </head>
 
 <body>
@@ -66,7 +68,6 @@
                 <nav class="top-nav">
                     <ul class="top-nav nav_list">
                         <!-- <li><a href="portfolio.html">portfolio</a></li> -->
-                        <!--<li class="page-scroll"><a href="http://dmtalen.lofter.com/">LOFTER</a></li>-->
                         <li class="page-scroll"><a href="https://github.com/dreamtalen">Github</a></li>
                         <li class="page-scroll"><a href="awards.html">Awards</a></li>
                         <li class="page-scroll"><a href="experience.html">experience</a></li>
@@ -85,62 +86,60 @@
             </div>
         </div>
     </div>
-    <div class="slider_bg">
-        <!-- start slider -->
-        <div class="container">
-            <div class="row slider">
-                <div class="wmuSlider example1">
-                    <!-- start wmuSlider example1 -->
-                    <div class="wmuSliderWrapper">
-                        <article style="position: absolute; width: 100%; opacity: 0;">
-                            <div class="slider_img text-center">
-                                <ul class="list-unstyled list_imgs">
-                                    <li><img src="images/shanghai.jpg" alt="" class="responsive" /></li>
-                                </ul>
-                            </div>
-                        </article>
-                        <article style="position: relative; width: 100%; opacity: 1;">
-                            <div class="slider_img text-center">
-                                <ul class="list-unstyled list_imgs">
-                                    <li><img src="images/beijing.jpg" alt="" class="responsive" /></li>
-                                </ul>
-                            </div>
-                        </article>
-                        <article style="position: relative; width: 100%; opacity: 2;">
-                            <div class="slider_img text-center">
-                                <ul class="list-unstyled list_imgs">
-                                    <li><img src="images/xiamen.jpg" alt="" class="responsive" /></li>
-                                </ul>
-                            </div>
-                        </article>
-                        <article style="position: relative; width: 100%; opacity: 3;">
-                            <div class="slider_img text-center">
-                                <ul class="list-unstyled list_imgs">
-                                    <li><img src="images/xiamen2.jpg" alt="" class="responsive" /></li>
-                                </ul>
-                            </div>
-                        </article>
-                        <article style="position: relative; width: 100%; opacity: 3;">
-                            <div class="slider_img text-center">
-                                <ul class="list-unstyled list_imgs">
-                                    <li><img src="images/kaws.jpg" alt="" class="responsive" /></li>
-                                </ul>
-                            </div>
-                        </article>
-                    </div>
-                    <ul class="wmuSliderPagination">
-                        <li><a href="#" class="">0</a></li>
-                        <!-- <li><a href="#" class="">1</a></li> -->
-                        <li><a href="#" class="">2</a></li>
-                        <li><a href="#" class="">3</a></li>
+
+    <style type="text/css">
+        .experience_date { float:right; _position:relative;}
+        /*.center_gpa {text-align: center;}*/
+    </style>
+
+    <div class="container">
+        <div class="blog-header">
+            <h1 class="blog-title">Education Experience</h1>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-12 blog-main">
+                <div class="blog-post">
+                    <h2 class="blog-post-title">Shanghai Jiao Tong University (SJTU)</h2>
+                    <p><strong>Master of Science in Electronic Science and Technology</strong><span class="experience_date">Sep. 2016 - Present</span></p>
+                    <ul>
+                        <li>Overall GPA: 3.72/4.0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Major GPA: 3.86/4.0</li>
+                        <li>1st Prize in 12th China Graduate Electronics Design Contest (Ranked 2nd in more than 100 teams in the integrated circuit professional finals)</li>
                     </ul>
-                    <script src="js/jquery.wmuSlider.js"></script>
-                    <script>
-                        $('.example1').wmuSlider();
-                    </script>
+                    <p><strong>Bachelor of Science in Microelectronics</strong><span class="experience_date">Sep. 2012 - Jun. 2016</span></p>
+                    <ul>
+                        <li>Overall GPA: 86.32/100 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Major GPA: 87.70/100</li>
+                        <li>Junior-Senior Overall GPA: 89.13/100 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Junior-Senior Major GPA: 89.30/100</li>
+                        <li>Received a waiver for the National College Entrance Exam to enter SJTU, as 1st Prize in National Olympiad in Physics (Henan Province, top 0.01%)</li>
+                    </ul>
                 </div>
-                <!-- end wmuSlider example1 -->
-                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="blog-header">
+            <h1 class="blog-title">Professional Experience</h1>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-12 blog-main">
+                <div class="blog-post">
+                    <h2 class="blog-post-title">Ctrip Computer Technology Co.,Ltd.</h2>
+                    <p><strong>Software Engineer Intern</strong><span class="experience_date">July. 2015 - Dec. 2015</span></p>
+                    <ul>
+                        <li>Developed and improved software tools to enhance site reliability and increase products development efficiency.</li>
+                        <li>Constructed <strong>"Alert-Subscribe", an alert event subscription system</strong> with another intern. Completed the back-end job including obtaining alert events periodically, classifying alert events with regular expression and sending notification to subscribers, using Python and SQL.</li>
+                        <li>Independently designed and implemented <strong>"Prometheus", a web service cluster consumers display platform</strong>, to show the dependency relationships between web service clusters, using Django as a back-end framework, Bootstrap for the front-end framework, and MySQL database and Redis database to store tasks scheduling queue.</li>
+                    </ul>
+                </div>
+                <div class="blog-post">
+                    <h2 class="blog-post-title">Shanghai Jiao Tong University (SJTU)</h2>
+                    <p><strong>Teaching Assistant</strong><span class="experience_date">Feb. 2017 - June. 2017</span></p>
+                    <ul>
+                        <li>As a teaching assistant in course <em>Design for Digital Integrated Circuit Design</em>.</li>
+                        <li>Assisted professor to teach course and mentored students’ group project and graded their homework.</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

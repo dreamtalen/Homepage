@@ -2,11 +2,13 @@
 <html>
 
 <head>
-    <title>Homepage</title>
+    <title>Awards</title>
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
-    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+    <link href="css/blog.css" rel='stylesheet' type='text/css' />
     <script type="application/x-javascript">
         addEventListener("load", function() {
             setTimeout(hideURLbar, 0);
@@ -20,27 +22,30 @@
      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
      <script src="https://oss.maxcdn.com/libs/respond.web/js/1.4.2/respond.min.js"></script>
 <![endif]-->
-    <!--<link href='http://fonts.useso.com/css?family=Kreon:300,400,700' rel='stylesheet' type='text/css'>-->
+    <!--<link href=' http://fonts.useso.com/css?family=Kreon:300,400,700 ' rel='stylesheet ' type='text/css '>-->
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
     <!-- start plugins -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script>
         $(function() {
-            var pull = $('#pull');
-            menu = $('nav ul');
+            var pull = $('#pull ');
+            menu = $('nav ul ');
             menuHeight = menu.height();
-            $(pull).on('click', function(e) {
+            $(pull).on('click ', function(e) {
                 e.preventDefault();
                 menu.slideToggle();
             });
             $(window).resize(function() {
                 var w = $(window).width();
-                if (w > 320 && menu.is(':hidden')) {
-                    menu.removeAttr('style');
+                if (w > 320 && menu.is(':hidden ')) {
+                    menu.removeAttr('style ');
                 }
             });
         });
     </script>
+    <!----font-Awesome----->
+    <!--<link rel="stylesheet" href="fonts/web/css/font-awesome.min.css">-->
+    <!----font-Awesome----->
     <script>
         var _hmt = _hmt || [];
         (function() {
@@ -50,9 +55,6 @@
             s.parentNode.insertBefore(hm, s);
         })();
     </script>
-    <!----font-Awesome----->
-    <!--<link rel="stylesheet" href="fonts/web/css/font-awesome.min.css">-->
-    <!----font-Awesome----->
 </head>
 
 <body>
@@ -66,7 +68,6 @@
                 <nav class="top-nav">
                     <ul class="top-nav nav_list">
                         <!-- <li><a href="portfolio.html">portfolio</a></li> -->
-                        <!--<li class="page-scroll"><a href="http://dmtalen.lofter.com/">LOFTER</a></li>-->
                         <li class="page-scroll"><a href="https://github.com/dreamtalen">Github</a></li>
                         <li class="page-scroll"><a href="awards.html">Awards</a></li>
                         <li class="page-scroll"><a href="experience.html">experience</a></li>
@@ -85,62 +86,32 @@
             </div>
         </div>
     </div>
-    <div class="slider_bg">
-        <!-- start slider -->
-        <div class="container">
-            <div class="row slider">
-                <div class="wmuSlider example1">
-                    <!-- start wmuSlider example1 -->
-                    <div class="wmuSliderWrapper">
-                        <article style="position: absolute; width: 100%; opacity: 0;">
-                            <div class="slider_img text-center">
-                                <ul class="list-unstyled list_imgs">
-                                    <li><img src="images/shanghai.jpg" alt="" class="responsive" /></li>
-                                </ul>
-                            </div>
-                        </article>
-                        <article style="position: relative; width: 100%; opacity: 1;">
-                            <div class="slider_img text-center">
-                                <ul class="list-unstyled list_imgs">
-                                    <li><img src="images/beijing.jpg" alt="" class="responsive" /></li>
-                                </ul>
-                            </div>
-                        </article>
-                        <article style="position: relative; width: 100%; opacity: 2;">
-                            <div class="slider_img text-center">
-                                <ul class="list-unstyled list_imgs">
-                                    <li><img src="images/xiamen.jpg" alt="" class="responsive" /></li>
-                                </ul>
-                            </div>
-                        </article>
-                        <article style="position: relative; width: 100%; opacity: 3;">
-                            <div class="slider_img text-center">
-                                <ul class="list-unstyled list_imgs">
-                                    <li><img src="images/xiamen2.jpg" alt="" class="responsive" /></li>
-                                </ul>
-                            </div>
-                        </article>
-                        <article style="position: relative; width: 100%; opacity: 3;">
-                            <div class="slider_img text-center">
-                                <ul class="list-unstyled list_imgs">
-                                    <li><img src="images/kaws.jpg" alt="" class="responsive" /></li>
-                                </ul>
-                            </div>
-                        </article>
-                    </div>
-                    <ul class="wmuSliderPagination">
-                        <li><a href="#" class="">0</a></li>
-                        <!-- <li><a href="#" class="">1</a></li> -->
-                        <li><a href="#" class="">2</a></li>
-                        <li><a href="#" class="">3</a></li>
+
+    <style type="text/css">
+        .experience_date { float:right; _position:relative;}
+        .center_gpa {text-align: center;}
+    </style>
+
+    <div class="container">
+        <div class="blog-header">
+            <h1 class="blog-title">Honors, Awards and Certificates</h1>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-12 blog-main">
+                <div class="blog-post">
+                    <ul>
+                        <li>1st Prize in 12th China Graduate Electronics Design Contest <span class="experience_date">Aug. 2017</span></li>
+                        <li>Senior skill level computer programmer (ARM), occupational qualification certificate, China <span class="experience_date">Apr. 2016</span></li>
+                        <li>Senior skill level computer programmer (JAVA), occupational qualification certificate, China <span class="experience_date">Dec. 2015</span></li>
+                        <li>Scholarship of Academic Excellence, Shanghai Jiao Tong University<span class="experience_date">Dec. 2014</span></li>
+                        <li>Outstanding student, Shanghai Jiao Tong University<span class="experience_date">Oct. 2014</span></li>
+                        <li>Scholarship of Academic Excellence, Shanghai Jiao Tong University<span class="experience_date">Dec. 2013</span></li>
+                        <li>2nd Prize in Shanghai Region, National College Student Physics Competition<span class="experience_date">Dec. 2013</span></li>
+                        <li>Outstanding student, Shanghai Jiao Tong University<span class="experience_date">May. 2013</span></li>
+                        <li>1st Prize in National Olympiad in Physics<span class="experience_date">Nov. 2011</span></li>
                     </ul>
-                    <script src="js/jquery.wmuSlider.js"></script>
-                    <script>
-                        $('.example1').wmuSlider();
-                    </script>
                 </div>
-                <!-- end wmuSlider example1 -->
-                <div class="clearfix"></div>
             </div>
         </div>
     </div>

@@ -40,7 +40,8 @@ nav li {
 }
 nav li.active a,nav li  a:hover{
 	text-decoration:none;
-	color: #323232;
+	/*color: #323232;*/
+	color: #57E0C4;
 }
 nav li  a {
 	color: #fff;

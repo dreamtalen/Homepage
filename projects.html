@@ -22,7 +22,7 @@
      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
      <script src="https://oss.maxcdn.com/libs/respond.web/js/1.4.2/respond.min.js"></script>
 <![endif]-->
-    <link href=' http://fonts.useso.com/css?family=Kreon:300,400,700 ' rel='stylesheet ' type='text/css '>
+    <!--<link href=' http://fonts.useso.com/css?family=Kreon:300,400,700 ' rel='stylesheet ' type='text/css '>-->
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
     <!-- start plugins -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
@@ -44,7 +44,7 @@
         });
     </script>
     <!----font-Awesome----->
-    <link rel="stylesheet" href="fonts/web/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="fonts/web/css/font-awesome.min.css">-->
     <!----font-Awesome----->
     <script>
         var _hmt = _hmt || [];
@@ -68,12 +68,14 @@
                 <nav class="top-nav">
                     <ul class="top-nav nav_list">
                         <!-- <li><a href="portfolio.html">portfolio</a></li> -->
-                        <li class="page-scroll"><a href="http://dmtalen.lofter.com/">LOFTER</a></li>
                         <li class="page-scroll"><a href="https://github.com/dreamtalen">Github</a></li>
+                        <li class="page-scroll"><a href="awards.html">Awards</a></li>
+                        <li class="page-scroll"><a href="experience.html">experience</a></li>
                         <li class="logo page-scroll">
                             <a title="hexa" href="index.html"><img src="images/logo.png" alt="" class="responsive" /></a>
                         </li>
-                        <li class="page-scroll"><a href="research.html">research</a></li>
+                        <li class="page-scroll"><a href="research.html">researches</a></li>
+                        <li class="page-scroll"><a href="projects.html">projects</a></li>
                         <li class="page-scroll"><a href="#about">About</a></li>
 
                         <!-- <li class="page-scroll"><a href="#contact">get in touch</a></li> -->
@@ -93,35 +95,90 @@
         <div class="row">
             <div class="col-sm-12 blog-main">
                 <div class="blog-post">
+                    <h2 class="blog-post-title">Reading Combinational Circuit and Evaluating Its Outputs</h2>
+                    <p class="blog-post-meta">Supervised by Prof. Weikang Qian, Shanghai Jiao Tong University</p>
+                    <ul>
+                        <li>The first programming assignment in course <em>Computer-Aided Design of Integrated Circuits</em>. The description file can be founded <a href="https://github.com/dreamtalen/CAD_lab1/raw/master/Programming-Assignment-1-Description.pdf">Here</a>.</li>
+                        <li>Designed a software tool which can read "bench" format file describing a combinational circuit and implemented a topological sorting algorithm to calculate the values for all the primary outputs of the circuits.</li>
+                        <li>Code repository can be founded <a href="https://github.com/dreamtalen/CAD_lab1">here at Github.com</a>.</li>
+                    </ul>
+                </div>
+                <div class="blog-post">
+                    <h2 class="blog-post-title">Unate Recursive Complement Algorithm</h2>
+                    <p class="blog-post-meta">Supervised by Prof. Weikang Qian, Shanghai Jiao Tong University</p>
+                    <ul>
+                        <li>The second programming assignment in course <em>Computer-Aided Design of Integrated Circuits</em>. The description file can be founded <a href="https://github.com/dreamtalen/CAD_lab2/raw/master/Programming-Assignment-2.pdf">Here</a>.</li>
+                        <li>Writed a program that performs the unate recursive complement using the Unate Recursive Paradigm (URP) idea. Given a file representing a Boolean function F as a Positional Cube Notation (PCN) cube list, complement it and return result as a PCN cube list.</li>
+                        <li>Code repository can be founded <a href="https://github.com/dreamtalen/CAD_lab2">here at Github.com</a>.</li>
+                    </ul>
+                </div>
+                <div class="blog-post">
                     <h2 class="blog-post-title">Image Super-Resolution Using Convolutional Neural Network(CNN)</h2>
                     <p class="blog-post-meta">Supervised by Prof. Haibao Chen, Shanghai Jiao Tong University</p>
                     <ul>
                         <!-- <li>Used a directed acyclic graph to represent the circuit and built a math model for the short path padding problem.</li> -->
                         <li>Applied deep learning techniques to sharpen or improve the quality of a low-resolution image input by outputting a super-resolved high-resolution image.</li>
                         <li>Proposed three different CNN models and the 7-layers CNN_DEEP got lower loss value and reduced 10% training time, compared with "waifu2x", a open source image super-resolution software.</li>
+                        <li>Project report can be downloaded <a href="https://github.com/dreamtalen/Homepage/raw/master/Image%20Super-Resolution%20Using%20Convolutional%20Neural%20Network.pdf">here</a>.</li>
                     </ul>
                     <br>
                     <img class="img-responsive center-block" src="images/cnn_table1.png" width=80% />
                     <br>
                     <img class="img-responsive center-block" src="images/cnn_table2.png" width=80% />
-                    <br>
                 </div>
                 <div class="blog-post">
-                    <h2 class="blog-post-title">Three-dimensional Integrated Circuit(3D-IC) Partitioning Technique Design</h2>
-                    <p class="blog-post-meta">Supervised by Prof. Weifeng He, Shanghai Jiao Tong University</p>
+                    <h2 class="blog-post-title">Forecasting count of rental bikes for bikeshare systems</h2>
+                    <p class="blog-post-meta">Supervised by Prof. Haibao Chen, Shanghai Jiao Tong University</p>
                     <ul>
-                        <li><strong>Excellent graduate thesis</strong> in Department of Micro-Nano Electronics, Shanghai Jiao Tong University.</li>
-                        <li>Designed a 3D-IC partitioning algorithm for motion estimation(ME) module of HEVC, including the initial partition algorithm based on breath first search and the iterative optimization algorithm.</li>
-                        <li>Designed and implemented a partitioning algorithm evaluation platform which that has functions including a netlist file parser, analyzing area reports, modeling circuits with hyper-graph data structures, applying partitioning algorithms,
-                            and evaluating partition results by the area utilization rate and cut edges number.</li>
-                        <li>Achieved an optimum partition for the ME module, which reduced 42.9% of the cut edges while the area utilization rate reached 95.5%.</li>
-                        <li>Code repository can be founded <a href="https://github.com/dreamtalen/3D-IC_Partitioning">here at Github.com</a>.</li>
-                        <li>This paper can be downloaded <a href="https://github.com/dreamtalen/3D-IC_Partitioning/raw/master/3D%20IC%20PARTITIONING%20TECHNIQUE%20BASED%20ON%20HEVC.pdf">here</a> (Chinese version).</li>
+                        <li>Forecasted the demand for bikes for bike sharing company in dependency of weather conditions like outside temperature and calendric information e.g. holidays.</li>
+                        <li>Using machine learning method, trained two or three layers neural network and a deep neural network regressor with Tensorflow to make predictions.</li>
+                        <li>Code repository can be founded <a href="https://github.com/dreamtalen/bike_sharing">here at Github.com</a>.</li>
+                        <li>Project report can be downloaded <a href="https://github.com/dreamtalen/Homepage/raw/master/Forecasting%20count%20of%20rental%20bikes%20for%20bikeshare%20systems.pdf">here</a>.</li>
                     </ul>
-                    <img class="img-responsive center-block" src="images/ic_partition_table1.png" width=70% />
+                    <img class="img-responsive center-block" src="images/bike_loss.png" />
+                    <p class="text-center">Fig. 1. Training loss and test loss with different training steps</p>
+                    <img class="img-responsive center-block" src="images/bike_prediction.png" />
+                    <p class="text-center">Fig. 2. Prediction and actual data with different dates</p>
+                </div>
+                <div class="blog-post">
+                    <h2 class="blog-post-title">Income Prediction via Support Vector Machine(SVM)</h2>
+                    <p class="blog-post-meta">Supervised by Prof. Haibao Chen, Shanghai Jiao Tong University</p>
+                    <ul>
+                        <li>Employed SVM methods to generate and evaluate income prediction data extracted by Barry Becker from the 1994 Census database.</li>
+                        <li>Used grid search method to find the optimum parameter C and gamma for SVM, and cross validation is used to reduce computational complexity.</li>
+                        <li>Achieved high accuracy rate up to 84.53% with our SVM algorithm, using RBF kernel and refined parameters.</li>
+                        <li>Code repository can be founded <a href="https://github.com/dreamtalen/adult_income">here at Github.com</a>.</li>
+                        <li>Project report can be downloaded <a href="https://github.com/dreamtalen/Homepage/raw/master/Income%20Prediction%20via%20Support%20Vector%20Machine(SVM).pdf">here</a>.</li>
+                    </ul>
+                    <img class="img-responsive center-block" src="images/svm_grid.png" />
+                    <p class="text-center">Fig. 3. Grid search to find the optimum parameter C and gamma</p>
                     <br>
-                    <img class="img-responsive center-block" src="images/ic_partition_table2.png" width=80% />
+                    <p class="text-center">Table. 3. Prediction accuracy with different C and gamma</p>
+                    <img class="img-responsive center-block" src="images/svm_result.png" width=70% />
+                </div>
+                <div class="blog-post">
+                    <h2 class="blog-post-title">"Eye of Providence", an Intelligent Monitoring System</h2>
+                    <p class="blog-post-meta">Hackathon SJTU 2017</p>
+                    <ul>
+                        <li>Led a group of 4 teammates to build an intelligent classroom monitoring system using face recognition and facial expression detection techniques during "Hackathon SJTU 2017".</li>
+                        <li>This real time monitoring system can automatically detect sleepy students and record them in database.</li>
+                        <li>Besides, we used speech identification method to offer several voice control commands.</li>
+                        <li>Worked as a full-stack developer in this project. Implemented back-end using Python Tornado framework and MySQL database, and front-end using Semantic-UI.</li>
+                        <li>Code repository can be founded <a href="https://github.com/dreamtalen/Eye_of_Providence">here at Github.com</a>.</li>
+                    </ul>
                     <br>
+                    <img class="img-responsive center-block" src="images/eye_of_providence1.png" />
+                    <p class="text-center">Fig. 4. main interface of "Eye of Providence" </p>
+                </div>
+                <div class="blog-post">
+                    <h2 class="blog-post-title">“Yorozuya”, a Campus Labor and Information Exchange Platform</h2>
+                    <p class="blog-post-meta">Hackathon SJTU 2014</p>
+                    <ul>
+                        <li>Designed and implemented a web application for campus users to exchange labor and information during "Hackathon SJTU 2014".</li>
+                        <li>Customers release tasks on this web app while workers can choose some of them and finish jobs to get payment for labor.</li>
+                        <li>Worked as a full-stack developer in this project. Implemented back-end using Python Flask framework and MySQL database, and front-end using Bootstrap.</li>
+                        <li>Code repository can be founded <a href="https://github.com/dreamtalen/EverythingHouse">here at Github.com</a>.</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -141,7 +198,8 @@
                     <p>Computer Aided Design / Electronics Design Automation
                         <br> Python Web Fullstack (Django, Bootstrap)
                         <br> Python Machine Learning & Data Analysis (Tensorflow, Numpy)
-                        <br> Humanities Photography/Landscape Photography/Freestyle Swimming/Hi-Fi Headphone
+                        <br> Landscape/Humanities Photography (All photographs on the homepage are my works. Please find more works on my <a href="http://dmtalen.lofter.com/">LOFTER</a>)
+                        <br> Freestyle Swimming/Table Tennis/Hi-Fi Headphone
                     </p>
                     <!-- <p>Here is my <a href="https://github.com/dreamtalen/CV_Ding/raw/master/CV_latest.pdf">CV</a>.</p> -->
                     <!-- 			<div class="soc_icons navbar-right">
